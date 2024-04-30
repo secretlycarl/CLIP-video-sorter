@@ -52,9 +52,7 @@ python analyze-sort-video.py
 
 2. It will ask for a directory of videos to process. Copy and paste from the file explorer.
 
-3. It will rename the files to be a stanard name with the count at the end (video_1 and so on) because I had some trouble with the script and videos that had the same file name.
-
-4. It will prompt you
+3. It will prompt you
 ```
 Enter the number of primary filters:
 ```
@@ -82,7 +80,7 @@ This is the first term it will use to sort desert videos. "day" from the eample.
 
 8. Then it will process all of the videos and sort them. Once it finishes processing all the videos, it will ask for a new directory, or you can exit.
 
-In my initial use, I needed to convert any stray mov files to mp4 and ignore landscape oriented videos for processing. This functionality is commented out and can be enabled if needed. 
+In my initial use, I needed to convert any stray mov files to mp4, rename the files to a standard name with a count (video_1...) and ignore landscape oriented videos for processing. This functionality is commented out and can be enabled if needed. 
 
 # Potential changes
 
