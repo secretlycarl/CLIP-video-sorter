@@ -1,0 +1,4 @@
+ffmpeg-python
+Pillow
+setuptools>=58.0.0
+git+https://github.com/openai/CLIP.git  # Assuming CLIP needs to be installed from GitHub
