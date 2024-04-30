@@ -5,7 +5,7 @@ This is a simple script that uses FFMPEG and CLIP to sort videos based on overal
 
 It is meant to be used with mp4 files. FFMPEG extracts frames from the videos in a folder (1 per second of video), then CLIP analyzes the visual content of the frames and compares it to strings you input. It then sorts the videos into folders based on those strings. My files were mostly short, 720p videos and it could process a few hundred in ~10 minutes on my RTX 3060.
 
-This was quickly made (with the help of gpt4 through [Cursor](https://cursor.sh/)) so I can't advise on the best type of filter parameters but I'd suggest starting with things in the same category, so for a bunch of videos of landscapes you could filter by "desert, forest, city" etc. It can also use different subfilters to filter those categories further (day, night etc.) Definitely test in small batches before you do a whole library of videos. It's not perfect, and mis-categorizes ~15% of them. Still helped me sort a lot of videos quicker than without it.
+This was quickly made (with the help of gpt4 through [Cursor](https://cursor.sh/)) so I can't advise on the best type of filter parameters but I'd suggest starting with things in the same category, so for a bunch of videos of landscapes you could filter by "desert, forest, city" etc. It can also use different subfilters to filter those categories further (day, night etc.) Definitely test in small batches before you do a whole library of videos. It's not perfect, and mis-categorizes ~15% of them depending on the sort terms. Still helped me sort a lot of videos quicker than without it.
 
 # Requirements
 
