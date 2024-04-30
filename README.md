@@ -21,66 +21,64 @@ Get python set up on your system and add it to PATH.
 
 Open the project folder in powershell
 
-Create a virtual environment with
+1. Create a virtual environment with
 ```
 python -m venv venv
-
 ```
 
-Activate the environment
+2. Activate the environment
 ```
 venv\Scripts\activate
 ```
 
-Install requirements
+3. Install requirements
 ```
 pip install -r requirements.txt
 ```
 
-Install the correct pytorch for CUDA using the command from the pytorch.com link above, mine was
+4. Install the correct pytorch for CUDA using the command from the pytorch.com link above, mine was
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
-
 # Usage
 
-Once all of the setup is complete, run this command with the venv activated
+1. Once all of the setup is complete, run this command with the venv activated
 ```
 python analyze-sort-video.py
 ```
 
-It will ask for a directory of videos to process. Copy and paste from the file explorer.
+2. It will ask for a directory of videos to process. Copy and paste from the file explorer.
 
-It will prompt you
+3. It will prompt you
 ```
 Enter the number of primary filters:
 ```
 This is the amount of top level folders you want it to sort the current videos into. Based on "desert, forest, city" from earlier, that would be 3.
 
-It will prompt you
+4. It will prompt you
 ```
 Enter the name for primary filter 1:
 ```
 This is the first term that it will use to sort. So "desert" from the example.
 
-It will prompt you
+5. It will prompt you
 ```
 Enter the number of subfilters for desert (Enter 0 to skip):
 ```
 This is the amount of terms you use to sort the videos in "desert". From the example this would be 2. 0 can be entered to stop it from sorting further.
 
-It will prompt you
+6. It will prompt you
 ```
 Enter the name for subfilter 1 for desert:
 ```
 This is the first term it will use to sort desert videos. "day" from the eample. It will then ask about the next filters until you have filled all of them in.
 
-Then it will go on to have you select the next top level sorting term. "forest" from the example, and it will ask the same questions as it did for the first one.
+7. Then it will go on to have you select the next top level sorting term. "forest" from the example, and it will ask the same questions as it did for the first one.
 
-Then it will process all of the videos and sort them. Once it finishes processing all the videos, it will ask for a new directory, or you can exit.
+8. Then it will process all of the videos and sort them. Once it finishes processing all the videos, it will ask for a new directory, or you can exit.
 
-In my initial use, I needed to convert any stray mov files to mp4 and ignore landscape oriented videos for processing. They are commented out and can be enabled if needed. 
+In my initial use, I needed to convert any stray mov files to mp4 and ignore landscape oriented videos for processing. This functionality is commented out and can be enabled if needed. 
 
 # Potential changes
 
