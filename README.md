@@ -1,9 +1,11 @@
 # CLIP-video-sorter
 sorts videos based on user-defined visual content
 
-This is a simple script that uses FFMPEG and CLIP to sort videos based on visual content. I had a bunch of videos that I didn't want to manually sort and couldn't find a free or efficient tool to do so, so I threw this together. I'm on windows.
+This is a simple script that uses FFMPEG and CLIP to sort videos based on overall visual content. I had a bunch of videos that I didn't want to manually sort and couldn't find a free or efficient tool to do so, so I threw this together. I'm on windows.
 
-It is meant to be used with mp4 files. FFMPEG extracts frames from the videos in a folder (1 per second of video), then CLIP analyzes the visual content of the frames and compares it to strings you input. It then sorts the videos into folders based on the words you are using. This was quickly made (with the help of gpt4 through [Cursor](https://cursor.sh/)) so I can't advise on the best type of filter parameters but I'd suggest starting with things in the same category, such as "desert, forest, city" etc. It can also use different subfilters to filter those categories further (day, night etc.) Definitely test in small batches before you do a whole library of videos. It's not perfect, and mis-categorizes ~15% of them. Still helped me sort a lot of videos quicker than without it.
+It is meant to be used with mp4 files. FFMPEG extracts frames from the videos in a folder (1 per second of video), then CLIP analyzes the visual content of the frames and compares it to strings you input. It then sorts the videos into folders based on the words you are using.
+
+This was quickly made (with the help of gpt4 through [Cursor](https://cursor.sh/)) so I can't advise on the best type of filter parameters but I'd suggest starting with things in the same category, such as "desert, forest, city" etc. It can also use different subfilters to filter those categories further (day, night etc.) Definitely test in small batches before you do a whole library of videos. It's not perfect, and mis-categorizes ~15% of them. Still helped me sort a lot of videos quicker than without it.
 
 # Requirements
 
@@ -36,7 +38,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Install the correct pytorch for CUDA using the command from the pytorch.com link above, mine was
+4. Install the correct pytorch for CUDA using the command from the pytorch.org link above, mine was
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
