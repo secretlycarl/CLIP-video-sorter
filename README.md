@@ -15,7 +15,7 @@ CUDA toolkit installed
 
 FFMPEG installed and in PATH
 
-Pytorch associated with your CUDA version (find it [here](https://pytorch.org/get-started/locally/))
+Command to install Pytorch associated with your CUDA version (find it [here](https://pytorch.org/get-started/locally/))
 
 # Setup
 
