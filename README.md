@@ -7,7 +7,7 @@ It is meant to be used with mp4 files. FFMPEG extracts frames from the videos in
 
 # Requirements
 
-Python (3.7 or newer)
+Python (3.7 or newer) installed and in PATH
 
 CUDA Compatible GPU
 
@@ -18,8 +18,6 @@ FFMPEG installed and in PATH
 Pytorch associated with your CUDA version (find it [here](https://pytorch.org/get-started/locally/))
 
 # Setup
-
-Get python set up on your system and add it to PATH.
 
 Open the project folder in powershell
 
